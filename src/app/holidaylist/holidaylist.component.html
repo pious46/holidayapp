@@ -17,9 +17,9 @@
     </md-chip-list>
 
     <md-nav-list>
-        <md-list-item *ngFor="let link of holidays">
-            <a md-line href="...">{{ link.name }}</a>
-            <button md-icon-button (click)="gotoDetail(link)">
+        <md-list-item *ngFor="let link of holidays" (click)="gotoDetail(link)">
+            <a md-line>{{ link.name }}</a>
+            <button md-icon-button>
         <md-icon>info</md-icon>
      </button>
         </md-list-item>
