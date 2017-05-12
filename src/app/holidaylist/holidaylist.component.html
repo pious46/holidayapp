@@ -1,0 +1,27 @@
+<div class="list-container">
+
+
+    <md-input-container>
+        <input mdInput placeholder="Country" [(ngModel)]="country" #ctrl="ngModel" [readonly]="true">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Month" [(ngModel)]="month" #ctrl="ngModel" [readonly]="true">
+    </md-input-container>
+
+    <md-input-container>
+        <input mdInput placeholder="Year" [(ngModel)]="year" #ctrl="ngModel" [readonly]="true">
+    </md-input-container>
+    <md-chip-list>
+        <md-chip>Inputs are Read Only- API has limit.</md-chip>
+    </md-chip-list>
+
+    <md-nav-list>
+        <md-list-item *ngFor="let link of holidays">
+            <a md-line href="...">{{ link.name }}</a>
+            <button md-icon-button (click)="gotoDetail(link)">
+        <md-icon>info</md-icon>
+     </button>
+        </md-list-item>
+    </md-nav-list>
+</div>
