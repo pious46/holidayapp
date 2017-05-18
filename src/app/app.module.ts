@@ -27,7 +27,7 @@ import { HolidayService} from './services/holiday.service';
     FormsModule,
     HttpModule,
     JsonpModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     RouterModule.forRoot(ROUTES, { useHash: true }),
     BrowserAnimationsModule
   ],
